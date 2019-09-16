@@ -280,6 +280,21 @@ public class Constants {
     // locked flow error message. Parameters passed in are the flow name and project name.
     public static final String AZKABAN_LOCKED_FLOW_ERROR_MESSAGE =
         "azkaban.locked.flow.error.message";
+
+    // AAD Related contents
+
+    // class to use to provide AADCredentials for a user. (Should be instance AADCredentialsRetriever)
+    public static final String AZKABAN_AAD_CREDENTIAL_RETRIEVER_NAME = "azkaban.aad.credentialretriever.class";
+
+    public static final String AZKABAN_AAD_KEY_FOR_CREDS = "azkaban.aad.provider.key";
+    public static final String AZAKABN_AAD_KEY_FOR_CREDS_DEFAULT = "aadAccessToken";
+
+    // authority, clientID and secret used to authenticate to AzureAD
+    public static final String AZKABAN_AAD_AUTHORITY = "azkaban.aad.authority";
+    public static final String AZKABAN_AAD_CLIENT_ID = "azkaban.aad.client_id";
+    public static final String AZKABAN_AAD_CLIENT_SECRET = "azkaban.aad.client_secret";
+
+
   }
 
   public static class FlowProperties {

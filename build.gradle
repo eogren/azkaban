@@ -65,6 +65,7 @@ ext.versions = [
 
 ext.deps = [
         // External dependencies
+        adal4J              : 'com.microsoft.azure:adal4j:1.6.4',
         assertj             : 'org.assertj:assertj-core:3.8.0',
         awaitility          : 'org.awaitility:awaitility:3.0.0',
         collections         : 'commons-collections:commons-collections:3.2.2',
@@ -272,3 +273,4 @@ coveralls {
 tasks.coveralls {
     dependsOn jacocoAggregateReport
 }
+apply from: 'content.gradle'
